@@ -16,27 +16,11 @@ export const headerItems: HeaderItems[] = [
   },
 
   {
-    title: 'Components',
+    title: 'Resources',
 
-    path: '/components',
+    path: '/resources',
 
     disabled: false,
-  },
-
-  {
-    title: 'Starters',
-
-    path: '/starters',
-
-    disabled: true,
-  },
-
-  {
-    title: 'Docs',
-
-    path: '/docs',
-
-    disabled: true,
   },
 
   {

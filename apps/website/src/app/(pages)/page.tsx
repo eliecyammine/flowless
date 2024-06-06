@@ -4,7 +4,7 @@ import HeroSection from './_sections/hero';
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-dvh items-center justify-center">
+    <div className="flex w-full items-center justify-center">
       <HeroSection />
     </div>
   );

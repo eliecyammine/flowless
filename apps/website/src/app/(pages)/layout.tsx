@@ -1,5 +1,6 @@
-/// ---------- || TYPES & INTERFACES || ---------- ///
 import Header from '@/components/shared/header';
+
+/// ---------- || TYPES & INTERFACES || ---------- ///
 
 interface LandingLayoutProps {
   children: React.ReactNode;
@@ -9,10 +10,10 @@ interface LandingLayoutProps {
 
 export default function LandingLayout({ children }: Readonly<LandingLayoutProps>) {
   return (
-    <div className="relative min-h-dvh overflow-hidden">
+    <div className="relative overflow-hidden">
       <Header />
 
-      <main className="flex-1">{children}</main>
+      <main className="flex min-h-dvh">{children}</main>
     </div>
   );
 }

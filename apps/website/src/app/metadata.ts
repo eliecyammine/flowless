@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
-import { DESCRIPTION, DOMAIN, TITLE } from '@/lib/constants/site';
+import { DESCRIPTION, DOMAIN, SLOGAN, TITLE } from '@/lib/constants/site';
 
 /// ---------- || METADATA || ---------- ///
 
 export const metadata: Metadata = {
   title: {
-    default: `${TITLE} | ${DESCRIPTION}`,
+    default: `${TITLE} | ${SLOGAN}`,
     template: `%s | ${TITLE}`,
   },
 
@@ -16,14 +16,21 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: 'Flowless Labs',
+      name: TITLE,
       url: DOMAIN,
     },
   ],
 
-  creator: 'Flowless Labs',
+  creator: TITLE,
 
   applicationName: TITLE,
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+
+    title: TITLE,
+  },
 
   icons: {
     icon: '/favicons/favicon.ico',
@@ -32,4 +39,35 @@ export const metadata: Metadata = {
   },
 
   manifest: `/site.webmanifest`,
+
+  openGraph: {
+    title: {
+      default: `${TITLE} | ${SLOGAN}`,
+      template: `%s | ${TITLE}`,
+    },
+
+    description: DESCRIPTION,
+
+    url: DOMAIN,
+    siteName: TITLE,
+
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  alternates: {
+    canonical: '/',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };

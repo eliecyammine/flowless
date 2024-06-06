@@ -14,7 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@flowless/ui/sheet';
 
 import { headerItems } from '@/config/header.config';
 
-import { LogoWithText } from './logo';
+import { LogoWithText } from '../logo';
 
 /// ---------- || MOBILE NAV || ---------- ///
 
@@ -29,17 +29,13 @@ export default function MobileNav() {
         <Button variant="outline" size="icon" className="flex rounded-full sm:hidden">
           <IconMist className="size-5" />
 
-          <span className="sr-only">menu</span>
+          <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
 
       <SheetContent side="top" className="m-4 space-y-5 rounded-3xl py-6">
-        <Link href="/" className="z-10">
-          <LogoWithText
-            iconProps={{
-              className: 'w-6 h-6 sm:w-5 sm:h-5 fill-foreground',
-            }}
-          />
+        <Link href="/" className="z-10" aria-label="Flowless Home">
+          <LogoWithText />
         </Link>
 
         <div className="flex flex-col space-y-2">
@@ -51,10 +47,9 @@ export default function MobileNav() {
                 void router.push(String(item.path));
                 setIsOpen(false);
               }}
-              className={cn(
-                'text-muted-foreground hover:text-foreground/80 text-base',
-                item.disabled && 'pointer-events-none opacity-60',
-              )}
+              className={cn('text-muted-foreground hover:text-foreground/80 text-base', {
+                'pointer-events-none opacity-60': item.disabled,
+              })}
             >
               {item.title}
             </Link>
@@ -62,7 +57,7 @@ export default function MobileNav() {
         </div>
 
         <div className="flex items-center justify-center space-x-1">
-          {/* Twitter Link */}
+          {/* X (Twitter) Link */}
           <Link
             href="https://x.com/flowless_labs"
             target="_blank"
@@ -73,13 +68,12 @@ export default function MobileNav() {
               }),
               'xs:hidden flex rounded-full',
             )}
+            aria-label="X (Formally Twitter)"
           >
             <IconBrandX className="size-5" />
-
-            <span className="sr-only">{`X (Formally Twitter)`}</span>
           </Link>
 
-          {/* Github Link */}
+          {/* GitHub Link */}
           <Link
             href="https://github.com/eliecyammine/flowless"
             target="_blank"
@@ -90,10 +84,9 @@ export default function MobileNav() {
               }),
               'xs:hidden flex rounded-full',
             )}
+            aria-label="GitHub"
           >
             <IconBrandGithub className="size-5" />
-
-            <span className="sr-only">GitHub</span>
           </Link>
         </div>
       </SheetContent>

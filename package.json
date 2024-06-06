@@ -3,7 +3,7 @@
   "private": true,
   "license": "MIT",
   "author": {
-    "name": "Flowless Labs",
+    "name": "Flowless",
     "url": "https://flowless.xyz"
   },
   "workspaces": [

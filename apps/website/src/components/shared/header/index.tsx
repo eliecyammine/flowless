@@ -5,9 +5,9 @@ import { IconBrandGithub, IconBrandX } from '@tabler/icons-react';
 import { buttonVariants } from '@flowless/ui/button';
 import { cn } from '@flowless/ui/cn';
 
-import { ThemeToggle } from '../others/theme-toggle';
+import { ThemeToggle } from '../../others/theme-toggle';
+import { LogoWithText } from '../logo';
 import DesktopNav from './desktop-nav';
-import { LogoWithText } from './logo';
 import MobileNav from './mobile-nav';
 
 /// ---------- || HEADER || ---------- ///
@@ -15,18 +15,20 @@ import MobileNav from './mobile-nav';
 export default function Header() {
   return (
     <header className="relative z-50">
-      <div className="border-border bg-background/95 supports-[backdrop-filter]:bg-background/60 fixed inset-x-0 top-5 mx-4 rounded-full border px-2 py-2 backdrop-blur sm:mx-auto sm:max-w-fit">
-        <div className="flex items-center justify-between sm:justify-center">
+      <div className="border-border bg-background/95 supports-[backdrop-filter]:bg-background/60 fixed inset-x-0 top-5 mx-4 max-w-[620px] rounded-full border px-2 py-2 backdrop-blur sm:mx-auto">
+        <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:ml-0.5 sm:space-x-0">
             <MobileNav />
 
-            <LogoWithText />
+            <Link href="/" aria-label="Flowless Home">
+              <LogoWithText />
+            </Link>
           </div>
 
           <DesktopNav />
 
           <div className="flex items-center space-x-1">
-            {/* Twitter Link */}
+            {/* X (Twitter) Link */}
             <Link
               href="https://x.com/flowless_labs"
               target="_blank"
@@ -37,13 +39,12 @@ export default function Header() {
                 }),
                 'xs:flex hidden rounded-full',
               )}
+              aria-label="X (Formally Twitter)"
             >
               <IconBrandX className="size-5" />
-
-              <span className="sr-only">{`X (Formally Twitter)`}</span>
             </Link>
 
-            {/* Github Link */}
+            {/* GitHub Link */}
             <Link
               href="https://github.com/eliecyammine/flowless"
               target="_blank"
@@ -54,10 +55,9 @@ export default function Header() {
                 }),
                 'xs:flex hidden rounded-full',
               )}
+              aria-label="GitHub"
             >
               <IconBrandGithub className="size-5" />
-
-              <span className="sr-only">GitHub</span>
             </Link>
 
             {/* Theme Toggle */}

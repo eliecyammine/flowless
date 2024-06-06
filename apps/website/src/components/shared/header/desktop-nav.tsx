@@ -13,19 +13,16 @@ export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="mx-5 hidden sm:block">
-      <div className="flex items-center space-x-3">
+    <nav className="mx-8 hidden sm:block">
+      <div className="flex items-center space-x-4">
         {headerItems.map((item) => (
           <Link
             key={item.title}
             href={item.path}
-            className={cn(
-              'text-muted-foreground hover:text-foreground/80 text-sm',
-              {
-                'text-foreground': pathname === item.path,
-              },
-              item.disabled && 'pointer-events-none opacity-60',
-            )}
+            className={cn('text-muted-foreground hover:text-foreground/80 text-sm', {
+              'text-foreground': pathname === item.path,
+              'pointer-events-none opacity-60': item.disabled,
+            })}
           >
             {item.title}
           </Link>

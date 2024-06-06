@@ -1,26 +1,48 @@
-# Flowless Labs
+# Flowless - [flowless.xyz](https://flowless.xyz)
 
-Empowering Businesses and Developers with Cutting-Edge Technology.
-
-A premier software company providing innovative solutions, specializing in custom software development for businesses and developers.
-
-Flowless Labs is a premier software company dedicated to providing innovative solutions for businesses and developers. We specialize in custom software development, delivering high-quality and efficient services tailored to meet the unique needs of our clients. At Flowless Labs, our mission is to drive digital transformation and empower our clients with technology that enhances productivity and fosters growth. Our flagship product, Flowless, embodies our commitment to excellence and innovation, offering a suite of tools designed to streamline and supercharge development processes.
-
-## Flowless
+(also referred to as Flowless Labs)
 
 Unlock Your Potential.
 
-A flagship product of Flowless Labs offering a comprehensive suite of development tools and resources, including the open-source Flowless UI.
+- Delivering top-notch software and website solutions tailored to clients' needs, along with essential resources and tools for developers.
 
-Flowless is the flagship product of Flowless Labs, designed to revolutionize the development experience. Whether you're a business seeking robust software solutions or a developer looking for powerful tools, Flowless has you covered. Our platform offers a comprehensive suite of resources, including the Flowless UI, an open-source library of customizable UI components built on Next.js 14 and Tailwind CSS. With Flowless, you can accelerate your development workflow, unlock new potentials, and bring your projects to life with unmatched efficiency and ease.
+- Flowless, at flowless.xyz, specializes in creating seamless digital experiences through high-quality software and website solutions tailored for clients and businesses. In addition to our services, we offer a variety of resources for developers, including the free and open-source Flowless UI and Flowless DS For those looking to supercharge their development process, we provide premium resources such as Flowless Starters and Flowless Docs. Explore our blog for insightful articles and updates.
 
-## Flowless UI
+## Flowless Free Resources
 
-Build Faster. Customizable. Open Source.
+### Flowless UI - [ui.flowless.xyz](https://ui.flowless.xyz)
 
-An open-source library of UI components built on Next.js 14 and Tailwind CSS, designed to streamline and enhance the development process.
+-Build Faster. Customizable. Open Source.
 
-Flowless UI is a cornerstone of the Flowless platform, providing developers with a powerful, open-source library of UI components. Built on Next.js 14 and Tailwind CSS, Flowless UI is designed to supercharge your MVP development. With Flowless UI, you can build faster, customize with ease, and tap into the collaborative power of open-source. Our components are tailored to streamline your development process, offering flexibility and scalability to suit any project. Experience the future of web development with Flowless UI—build better, faster, and smarter.
+- A free, open-source library of customizable UI components built on Next.js 14 and Tailwind CSS.
+
+- Flowless UI is an open-source library of customizable UI components built to help developers build faster and more efficiently. With components crafted using Next.js 14 and Tailwind CSS, Flowless UI is designed to be easily customizable and integrate seamlessly into any project.
+
+### Flowless DS - [ds.flowless.xyz](https://ds.flowless.xyz)
+
+Design Simplified.
+
+- A free, open-source design system for streamlined development.
+
+- Flowless DS is an open-source design system that simplifies the design process for developers. Offering a cohesive set of guidelines and components, Flowless DS ensures consistency and efficiency in building digital products.
+
+## Flowless Premium Resources
+
+### Flowless Starters - [starters.flowless.xyz](https://starters.flowless.xyz)
+
+Kickstart Your Projects.
+
+- Premium project starters to accelerate development.
+
+- Flowless Starters are premium project templates designed to kickstart your development process. These templates provide a robust foundation, enabling developers to quickly launch projects with best practices and optimized configurations.
+
+### Flowless Docs - [docs.flowless.xyz](https://docs.flowless.xyz)
+
+Generate Documentation Effortlessly.
+
+- Premium tool for effortless documentation generation.
+
+- Flowless Docs is a premium tool that generates comprehensive documentation effortlessly. Ideal for developers who want to maintain clear and structured project documentation with minimal effort.
 
 ## License
 
