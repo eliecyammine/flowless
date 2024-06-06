@@ -1,15 +1,11 @@
-import { Logo } from '@/components/shared/logo';
+import HeroSection from './_sections/hero';
+
+/// ---------- || HOME PAGE || ---------- ///
 
 export default function HomePage() {
   return (
-    <div className="text-center">
-      <p className="text-4xl">Welcome</p>
-      <p className="text-2xl">to</p>
-      <p className="font-logo text-6xl">Flowless</p>
-
-      <div className="m-4 flex justify-center">
-        <Logo width="30%" />
-      </div>
+    <div className="flex min-h-dvh items-center justify-center">
+      <HeroSection />
     </div>
   );
 }

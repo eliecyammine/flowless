@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
-import { fontFamily } from 'tailwindcss/defaultTheme';
+import defaultTheme, { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -12,6 +12,11 @@ const config: Config = {
   prefix: '',
 
   theme: {
+    screens: {
+      xs: '350px',
+      ...defaultTheme.screens,
+    },
+
     container: {
       center: true,
       padding: '2rem',

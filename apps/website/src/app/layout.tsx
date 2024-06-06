@@ -1,3 +1,4 @@
+import { default as TailwindIndicator } from '@/components/others/tailwind-indicator';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 
 import '@flowless/tailwind-config/globals.css';
@@ -25,13 +26,17 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 
       <body
         className={cn(
-          'font-sans antialiased',
           fontLogo.variable,
           fontSans.variable,
           fontMono.variable,
+          'font-sans antialiased',
         )}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+
+          <TailwindIndicator />
+        </ThemeProvider>
       </body>
     </html>
   );

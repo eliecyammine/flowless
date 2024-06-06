@@ -60,6 +60,9 @@ module.exports = {
       },
     ],
     'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
   },
   ignorePatterns: [
     '**/*.config.js',

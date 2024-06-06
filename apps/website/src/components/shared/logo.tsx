@@ -1,11 +1,17 @@
+import { TITLE } from '@/lib/constants/site';
+
+export type IconProps = React.HTMLAttributes<SVGElement>;
+
 interface LogoProps {
   width?: string;
   height?: string;
 
   color?: string;
+
+  iconProps?: IconProps;
 }
 
-export const Logo = ({ color, width, height }: LogoProps) => {
+export const Logo = ({ color, width, height, iconProps }: LogoProps) => {
   return (
     <svg
       version="1.1"
@@ -14,9 +20,10 @@ export const Logo = ({ color, width, height }: LogoProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 850 850"
-      width={width ?? '100%'}
-      height={height ?? '100%'}
+      width={width}
+      height={height}
       fill={color ?? 'hsl(var(--foreground))'}
+      {...iconProps}
     >
       <g>
         <g>
@@ -73,5 +80,21 @@ export const Logo = ({ color, width, height }: LogoProps) => {
         </g>
       </g>
     </svg>
+  );
+};
+
+export const LogoWithText = ({
+  className,
+  iconProps,
+}: {
+  className?: string;
+  iconProps?: IconProps;
+}) => {
+  return (
+    <div className="font-logo flex items-center space-x-2 text-xl">
+      <Logo height="40px" {...iconProps} />
+
+      <span className={className}>{TITLE}</span>
+    </div>
   );
 };
