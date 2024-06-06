@@ -1,0 +1,28 @@
+{
+  "name": "@flowless/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "tailwind.config.ts",
+    "postcss.config.cjs",
+    "globals.css"
+  ],
+  "exports": {
+    "./tailwind.config": "./tailwind.config.ts",
+    "./postcss.config": "./postcss.config.cjs",
+    "./globals.css": "./globals.css"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@flowless/eslint-config": "workspace:*",
+    "@flowless/typescript-config": "workspace:*",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3"
+  }
+}
