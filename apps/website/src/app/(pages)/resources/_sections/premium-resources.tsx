@@ -17,6 +17,7 @@ function PremiumResourcesContent() {
   return (
     <div className="grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
       <ResourceCard
+        isDisabled
         url={'https://starters.flowless.xyz'}
         title={'Flowless'}
         titleSpan={'Starters'}
@@ -24,6 +25,7 @@ function PremiumResourcesContent() {
       />
 
       <ResourceCard
+        isDisabled
         url={'https://docs.flowless.xyz'}
         title={'Flowless'}
         titleSpan={'Docs'}

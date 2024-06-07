@@ -18,6 +18,7 @@ function FreeResourcesContent() {
   return (
     <div className="grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
       <ResourceCard
+        isDisabled
         url={'https://ui.flowless.xyz'}
         title={'Flowless'}
         titleSpan={'UI'}
@@ -27,6 +28,7 @@ function FreeResourcesContent() {
       />
 
       <ResourceCard
+        isDisabled
         url={'https://ds.flowless.xyz'}
         title={'Flowless'}
         titleSpan={'Design System'}
