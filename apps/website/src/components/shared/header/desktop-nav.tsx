@@ -20,7 +20,8 @@ export default function DesktopNav() {
             key={item.title}
             href={item.path}
             className={cn('text-muted-foreground hover:text-foreground/80 text-sm', {
-              'text-foreground': pathname === item.path,
+              'text-foreground decoration-primary-foreground underline underline-offset-4':
+                pathname === item.path,
               'pointer-events-none opacity-60': item.disabled,
             })}
           >

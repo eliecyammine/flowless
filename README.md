@@ -46,4 +46,4 @@ Generate Documentation Effortlessly.
 
 ## License
 
-License under the [MIT License](https://github.com/eliecyammine/flowless/blob/main/LICENSE)
+License under the [MIT License](https://github.com/flowless-labs/flowless/blob/main/LICENSE)

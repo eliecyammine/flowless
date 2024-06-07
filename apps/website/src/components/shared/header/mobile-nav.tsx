@@ -75,7 +75,7 @@ export default function MobileNav() {
 
           {/* GitHub Link */}
           <Link
-            href="https://github.com/eliecyammine/flowless"
+            href="https://github.com/flowless-labs/flowless"
             target="_blank"
             className={cn(
               buttonVariants({

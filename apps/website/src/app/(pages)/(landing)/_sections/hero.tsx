@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { Logo } from '@/components/shared/logo';
+import { IconMail } from '@tabler/icons-react';
 
 import { buttonVariants } from '@flowless/ui/button';
 import { cn } from '@flowless/ui/cn';
@@ -23,14 +24,14 @@ function HeroLogo() {
   );
 }
 
-/// ---------- || HERO SLOGAN || ---------- ///
+/// ---------- || HERO CONTENT || ---------- ///
 
-function HeroSlogan() {
+function HeroContent() {
   return (
     <div className="flex flex-col items-center space-y-4 sm:space-y-5 md:space-y-6">
-      <h1 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
+      <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
         Unlock Your <span className="text-primary-foreground">Potential</span>.
-      </h1>
+      </h2>
 
       <p className="text-muted-foreground max-w-[530px] text-center sm:max-w-[600px] sm:text-lg md:max-w-[700px] md:text-xl">
         Delivering top-notch{' '}
@@ -51,17 +52,23 @@ function HeroSlogan() {
 
 function HeroCTA() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4">
+      <h3 className="text-center text-lg font-medium sm:text-xl md:text-2xl">
+        Let&apos;s have a chat
+      </h3>
+
       <Link
-        href="/"
+        href="mailto:hello@flowless.xyz"
         className={cn(
           buttonVariants({
             variant: 'primary',
             size: 'lg',
           }),
-          'rounded-full',
+          'flex flex-row items-center gap-1 rounded-full',
         )}
       >
+        <IconMail size={18} />
+
         <span className="font-semibold">Get in touch</span>
       </Link>
     </div>
@@ -74,11 +81,11 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="mx-4 flex flex-col items-center space-y-8 py-24 sm:space-y-10 md:space-y-12 md:py-16"
+      className="container flex flex-col items-center space-y-8 sm:space-y-10 md:space-y-12"
     >
       <HeroLogo />
 
-      <HeroSlogan />
+      <HeroContent />
 
       <HeroCTA />
     </section>

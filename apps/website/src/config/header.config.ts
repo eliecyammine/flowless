@@ -12,7 +12,7 @@ export const headerItems: HeaderItems[] = [
 
     path: '/services',
 
-    disabled: true,
+    disabled: false,
   },
 
   {
